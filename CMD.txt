@@ -1,0 +1,9 @@
+你用的是 ESP32-S3 内置 USB Serial/JTAG（非外挂 CH340/CP2102 芯片）。
+
+- 外挂 USB-UART 芯片（CH340 等）：芯片不参与 reset，COM 口不断开 → 监视器不受影响
+- ESP32-S3 内置 USB JTAG：reset 时芯片本身重启 → USB CDC 连接瞬断重连 → VSCode PlatformIO
+监视器断开，且不会自动重连
+
+你的 sdkconfig.defaults 主控制台是 UART0，USB 是镜像副控制台，但 COM59 就是那个 USB JTAG 口，断开就没了。
+
+& "$env:USERPROFILE\.platformio\penv\Scripts\pio.exe" run -t idf_monitor

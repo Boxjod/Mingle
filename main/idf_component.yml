@@ -1,0 +1,7 @@
+dependencies:
+  espressif/esp32-camera:
+    version: "*"
+  espressif/esp_jpeg:
+    version: "*"
+  espressif/esp_websocket_client:
+    version: ">=1.2.0"
