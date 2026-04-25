@@ -2,6 +2,8 @@
 
 > 一只栖息在你肩膀上的 AI 小鸟，帮你破冰、活跃气氛、听你指挥。
 
+#AttraX_Spring_Hackathon
+
 ## What is Mingle Bot?
 
 Mingle Bot 是一只毛绒小鸟形态的社交僚机的硬件端。把它放在肩膀上，它是你社交场合的得力搭档:
