@@ -1,8 +1,0 @@
-{
-    // PlatformIO: 固定默认环境，避免每次弹窗选择
-    "platformio-ide.defaultProjectEnv": "esp32s3-cam",
-    "platformio-ide.autoPickMonitorPort": true,
-
-    // Terminal: 固定串口监视器不弹选择框
-    "platformio-ide.activateOnlyOnPlatformIOProject": true
-}
